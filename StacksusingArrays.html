@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class stack{
+            constructor(){
+                this.arr=[];
+            }
+            push(value){
+                this.arr.push(value);
+            }
+            pop(){
+                return this.arr.pop();
+            }
+            peek(){
+                return this.arr[this.arr.length - 1];
+            }
+            isempty() {
+            return (this.arr.length === 0)
+        }
+        emptythis() {
+            return this.arr.length = 0
+            
+        }
+        sizeofstack(){
+            return this.arr.length
+        }
+        toarray(){
+            return this.arr
+        }
+        converttostr(){
+            return this.arr.toString()
+        }
+    }
+    var obj1= new stack;
+    console.log("Inserting elements in stacks");
+    obj1.push(20);
+    obj1.push(200);
+    obj1.push(201);
+    obj1.push(202);
+    obj1.push(203);
+    console.log(obj1);
+    console.log("Removing first element");
+    obj1.pop();
+    console.log(obj1);
+    console.log(obj1.peek());
+    console.log(obj1.isempty());
+    console.log(obj1.sizeofstack());
+    console.log(obj1.toarray());
+    console.log(obj1.converttostr());
+    console.log(obj1.emptythis());
+    </script>
+</body>
+</html>
