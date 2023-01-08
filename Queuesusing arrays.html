@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class queues{
+            constructor(){
+                this.arr=[];
+            }
+            insert(value){
+                this.arr.push(value);
+            }
+            dequeue(value){
+                if(this.arr.length > 0) { 
+                return this.arr.shift();
+            }
+        }
+        empty(){
+            return (this.arr.length === 0)
+        }
+        front_element(){
+            return this.arr[0];
+        }
+        rear_element(){
+            return this.arr[this.arr.length - 1];
+        }
+        toarray(){
+            return this.arr;
+        }
+
+        }
+        var obj1= new queues;
+        obj1.insert(20);
+        obj1.insert(201);
+        obj1.insert(202);
+        obj1.insert(203);
+        obj1.insert(204);
+        obj1.insert(205);
+        console.log(obj1.toarray());
+        console.log("Removing the element")
+        obj1.dequeue();
+        console.log(obj1);
+        console.log(obj1.empty()); // to check if queue is empty
+        console.log(obj1.front_element()); // to display front
+        console.log(obj1.rear_element()); // to display rear
+
+
+    </script>
+    
+</body>
+</html>
